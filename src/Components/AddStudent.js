@@ -3,6 +3,7 @@ import { TextField, FormControl, Button } from "@mui/material";
 //import{ Stack, InputLabel, MenuItem, Select, Box } from "@mui/material"
 import { useNavigate } from "react-router-dom";
 import "../Styles/addstudent.css";
+import { useFormik } from "formik";
 
 function AddStudent({ student, setStudent }) {
   const [name, setName] = useState("");
@@ -12,12 +13,13 @@ function AddStudent({ student, setStudent }) {
   const [id, setId] = useState("");
   const [course, setCourse] = useState("");
   const navigate = useNavigate();
+  const formik = useFormik({});
 
   return (
     <div className="content">
       <h1>Add Student</h1>
       <div className="subject">
-        <div className="form-container">
+        <form className="form-container">
           <h3>Student Registration Form</h3>
           <TextField
             id="standard-name"
@@ -91,7 +93,7 @@ function AddStudent({ student, setStudent }) {
             }}>
             Submit
           </Button>
-        </div>
+        </form>
       </div>
     </div>
   );

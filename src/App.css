@@ -36,14 +36,6 @@ div .home-image img {
   filter: drop-shadow(10px 10px 5px var(--main-color));
 }
 
-/* .dash {
-  justify-content: space-evenly;
-  padding: 25px;
-}
-.card {
-  border-left: 8px solid #fa9038;
-  margin-bottom: 0;
-} */
 .container {
   padding-top: 35px;
 }

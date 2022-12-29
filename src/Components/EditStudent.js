@@ -32,7 +32,7 @@ function EditStudent({ student, setStudent }) {
   // };
 
   let handleEdit = () => {
-    let newData = { name, email, phone: phone, rank: rank, id: id, course: course };
+    let newData = { name, email, phone, rank, id, course };
     let newArray = [...student];
     newArray.splice(index, 1, newData);
     setStudent(newArray);
